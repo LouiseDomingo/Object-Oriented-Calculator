@@ -168,6 +168,7 @@ namespace Object_Oriented_Calculator
         private void clearAllBtn_Click(object sender, EventArgs e)
         {
             displScreen.Text = "0";
+            enablingBtns();
         }
 
         //for operations
@@ -283,8 +284,7 @@ namespace Object_Oriented_Calculator
                 otherFunctions.input = displScreen.Text;
                 otherFunctions.Fraction();
                 displScreen.Text = otherFunctions.result2;
-                fractionBtn.Enabled = false;
-                disablingOperationBtns();
+                disablingBtns();
             }
             
         }
@@ -304,13 +304,56 @@ namespace Object_Oriented_Calculator
         }
 
         //added some functions
-        private void disablingOperationBtns()
+        private void disablingBtns()
         {
+            btnZero.Enabled = false;
+            btnOne.Enabled = false;
+            btnTwo.Enabled = false;
+            btnThree.Enabled = false;
+            btnFour.Enabled = false;
+            btnFive.Enabled = false;
+            btnSix.Enabled = false;
+            btnSeven.Enabled = false;
+            btnEight.Enabled = false;
+            btnNine.Enabled = false;
+            posiNegativeBtn.Enabled = false;
+            decimalBtn.Enabled = false;
+            percentBtn.Enabled = false;
+            squaredBtn.Enabled = false;
+            sqrRootBtn.Enabled = false;
+            fractionBtn.Enabled = false;
+            deleteBtn.Enabled = false;
             additionBtn.Enabled = false;
             subtractionBtn.Enabled = false;
             multiplicationBtn.Enabled = false;
             divisionBtn.Enabled = false;
             equalsBtn.Enabled = false;
+        }
+
+        private void enablingBtns()
+        {
+            btnZero.Enabled = true;
+            btnOne.Enabled = true;
+            btnTwo.Enabled = true;
+            btnThree.Enabled = true;
+            btnFour.Enabled = true;
+            btnFive.Enabled = true;
+            btnSix.Enabled = true;
+            btnSeven.Enabled = true;
+            btnEight.Enabled = true;
+            btnNine.Enabled = true;
+            posiNegativeBtn.Enabled = true;
+            decimalBtn.Enabled = true;
+            percentBtn.Enabled = true;
+            squaredBtn.Enabled = true;
+            sqrRootBtn.Enabled = true;
+            fractionBtn.Enabled = true;
+            deleteBtn.Enabled = true;
+            additionBtn.Enabled = true;
+            subtractionBtn.Enabled = true;
+            multiplicationBtn.Enabled = true;
+            divisionBtn.Enabled = true;
+            equalsBtn.Enabled = true;
         }
     }
 }
