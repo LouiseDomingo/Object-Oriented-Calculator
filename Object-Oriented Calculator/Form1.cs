@@ -244,7 +244,7 @@ namespace Object_Oriented_Calculator
                     operation.secondNum = displScreen.Text;
                     operation.Divide();
                     displScreen.Text = operation.result;
-                    equalsBtn.Enabled = false;
+                    disablingBtns();
                 }
             }
         }
