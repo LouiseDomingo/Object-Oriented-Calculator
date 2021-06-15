@@ -244,7 +244,7 @@ namespace Object_Oriented_Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 346);
+            this.ClientSize = new System.Drawing.Size(256, 346);
             this.Controls.Add(this.equalsBtn);
             this.Controls.Add(this.additionBtn);
             this.Controls.Add(this.subtractionBtn);
