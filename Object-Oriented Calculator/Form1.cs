@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Object_Oriented_Calculator
 {
-    public partial class Form1 : Form
+    public partial class objOrientedCalculator : Form
     {
-        public Form1()
+        public objOrientedCalculator()
         {
             InitializeComponent();
         }
