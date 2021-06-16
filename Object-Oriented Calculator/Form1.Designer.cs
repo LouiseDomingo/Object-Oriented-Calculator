@@ -72,6 +72,7 @@ namespace Object_Oriented_Calculator
             this.btnZero.TabIndex = 1;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
+            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
             // posiNegativeBtn
             // 

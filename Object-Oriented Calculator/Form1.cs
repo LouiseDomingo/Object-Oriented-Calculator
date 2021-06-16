@@ -17,5 +17,16 @@ namespace Object_Oriented_Calculator
             InitializeComponent();
         }
 
+        private void btnZero_Click(object sender, EventArgs e)
+        {
+            if (displScreen.Text == "0")
+            {
+
+            }
+            else
+            {
+                displScreen.Text = displScreen.Text + "0";
+            }
+        }
     }
 }
