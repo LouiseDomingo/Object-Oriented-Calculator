@@ -150,5 +150,10 @@ namespace Object_Oriented_Calculator
                 displScreen.Text = "0";
             }
         }
+
+        private void clearAllBtn_Click(object sender, EventArgs e)
+        {
+            displScreen.Text = "0";
+        }
     }
 }

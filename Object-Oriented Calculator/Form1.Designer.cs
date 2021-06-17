@@ -217,6 +217,7 @@ namespace Object_Oriented_Calculator
             this.clearAllBtn.TabIndex = 13;
             this.clearAllBtn.Text = "CA";
             this.clearAllBtn.UseVisualStyleBackColor = false;
+            this.clearAllBtn.Click += new System.EventHandler(this.clearAllBtn_Click);
             // 
             // percentBtn
             // 
