@@ -87,6 +87,7 @@ namespace Object_Oriented_Calculator
             this.posiNegativeBtn.TabIndex = 2;
             this.posiNegativeBtn.Text = "+ / -";
             this.posiNegativeBtn.UseVisualStyleBackColor = false;
+            this.posiNegativeBtn.Click += new System.EventHandler(this.posiNegativeBtn_Click);
             // 
             // btnOne
             // 
@@ -239,10 +240,11 @@ namespace Object_Oriented_Calculator
             this.displScreen.Multiline = true;
             this.displScreen.Name = "displScreen";
             this.displScreen.ReadOnly = true;
-            this.displScreen.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.displScreen.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.displScreen.Size = new System.Drawing.Size(232, 69);
             this.displScreen.TabIndex = 15;
             this.displScreen.Text = "0";
+            this.displScreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // divisionBtn
             // 

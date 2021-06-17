@@ -139,6 +139,22 @@ namespace Object_Oriented_Calculator
             }
         }
 
+        //other buttons in the form
+        
+        Double negativeVal;
+        private void posiNegativeBtn_Click(object sender, EventArgs e)
+        {
+            if (displScreen.Text != "0")
+            {
+                negativeVal = Convert.ToDouble(displScreen.Text) * -1;
+                displScreen.Text = negativeVal.ToString();
+            }
+            else
+            {
+
+            }
+        }
+
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             if (displScreen.Text.Length > 1)
@@ -155,5 +171,7 @@ namespace Object_Oriented_Calculator
         {
             displScreen.Text = "0";
         }
+
+        
     }
 }
