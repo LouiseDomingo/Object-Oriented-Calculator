@@ -155,6 +155,18 @@ namespace Object_Oriented_Calculator
             }
         }
 
+        private void decimalBtn_Click(object sender, EventArgs e)
+        {
+            if (displScreen.Text.Contains("."))
+            {
+
+            }
+            else
+            {
+                displScreen.Text = displScreen.Text + ".";
+            }
+        }
+
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             if (displScreen.Text.Length > 1)
@@ -172,6 +184,5 @@ namespace Object_Oriented_Calculator
             displScreen.Text = "0";
         }
 
-        
     }
 }

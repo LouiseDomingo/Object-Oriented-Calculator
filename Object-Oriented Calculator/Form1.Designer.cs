@@ -64,6 +64,7 @@ namespace Object_Oriented_Calculator
             this.decimalBtn.TabIndex = 0;
             this.decimalBtn.Text = ".";
             this.decimalBtn.UseVisualStyleBackColor = false;
+            this.decimalBtn.Click += new System.EventHandler(this.decimalBtn_Click);
             // 
             // btnZero
             // 
