@@ -228,10 +228,12 @@ namespace Object_Oriented_Calculator
             // displScreen
             // 
             this.displScreen.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displScreen.Enabled = false;
             this.displScreen.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.displScreen.Location = new System.Drawing.Point(12, 12);
             this.displScreen.Multiline = true;
             this.displScreen.Name = "displScreen";
+            this.displScreen.ReadOnly = true;
             this.displScreen.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.displScreen.Size = new System.Drawing.Size(232, 69);
             this.displScreen.TabIndex = 15;
