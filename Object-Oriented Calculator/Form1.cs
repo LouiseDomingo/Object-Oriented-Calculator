@@ -12,6 +12,8 @@ namespace Object_Oriented_Calculator
 {
     public partial class objOrientedCalculator : Form
     {
+        
+
         public objOrientedCalculator()
         {
             InitializeComponent();
@@ -134,6 +136,18 @@ namespace Object_Oriented_Calculator
             else
             {
                 displScreen.Text = displScreen.Text + "9";
+            }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            if (displScreen.Text.Length > 1)
+            {
+                displScreen.Text = displScreen.Text.Remove(displScreen.Text.Length - 1);
+            }
+            else
+            {
+                displScreen.Text = "0";
             }
         }
     }

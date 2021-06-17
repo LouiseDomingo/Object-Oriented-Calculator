@@ -205,6 +205,7 @@ namespace Object_Oriented_Calculator
             this.deleteBtn.TabIndex = 12;
             this.deleteBtn.Text = "→";
             this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // clearAllBtn
             // 
