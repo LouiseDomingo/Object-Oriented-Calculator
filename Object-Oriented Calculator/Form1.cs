@@ -12,7 +12,7 @@ namespace Object_Oriented_Calculator
 {
     public partial class objOrientedCalculator : Form
     {
-        
+        operationsClass operation = new operationsClass();
 
         public objOrientedCalculator()
         {
@@ -184,5 +184,24 @@ namespace Object_Oriented_Calculator
             displScreen.Text = "0";
         }
 
+        //for operations
+        private void additionBtn_Click(object sender, EventArgs e)
+        {
+            operation.firstNum = displScreen.Text;
+            displScreen.Text = "0";
+            operation.operand = "+";
+            operation.operationIsPressed = true;
+        }
+
+        private void equalsBtn_Click(object sender, EventArgs e)
+        {
+            if (operation.operand == "+")
+            {
+                operation.secondNum = displScreen.Text;
+                operation.Add();
+                displScreen.Text = operation.result;
+                operation.firstNum = displScreen.Text;
+            }
+        }
     }
 }

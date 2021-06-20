@@ -290,6 +290,7 @@ namespace Object_Oriented_Calculator
             this.additionBtn.TabIndex = 19;
             this.additionBtn.Text = "+";
             this.additionBtn.UseVisualStyleBackColor = false;
+            this.additionBtn.Click += new System.EventHandler(this.additionBtn_Click);
             // 
             // equalsBtn
             // 
@@ -301,6 +302,7 @@ namespace Object_Oriented_Calculator
             this.equalsBtn.TabIndex = 20;
             this.equalsBtn.Text = "=";
             this.equalsBtn.UseVisualStyleBackColor = false;
+            this.equalsBtn.Click += new System.EventHandler(this.equalsBtn_Click);
             // 
             // fractionBtn
             // 
