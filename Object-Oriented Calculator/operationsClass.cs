@@ -28,5 +28,17 @@ namespace Object_Oriented_Calculator
         {
             result = (Double.Parse(firstNum) * Double.Parse(secondNum)).ToString();
         }
+
+        public void Divide()
+        {
+            if (secondNum != "0")
+            {
+                result = (Double.Parse(firstNum) / Double.Parse(secondNum)).ToString();
+            }
+            else
+            {
+                result = "Undefined";
+            }
+        }
     }
 }
