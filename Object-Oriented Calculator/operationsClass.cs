@@ -18,5 +18,10 @@ namespace Object_Oriented_Calculator
         {
             result = (Double.Parse(firstNum) + Double.Parse(secondNum)).ToString();
         }
+
+        public void Subtract()
+        {
+            result = (Double.Parse(firstNum) - Double.Parse(secondNum)).ToString();
+        }
     }
 }

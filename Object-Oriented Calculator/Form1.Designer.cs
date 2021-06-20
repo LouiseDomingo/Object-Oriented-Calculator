@@ -279,6 +279,7 @@ namespace Object_Oriented_Calculator
             this.subtractionBtn.TabIndex = 18;
             this.subtractionBtn.Text = "-";
             this.subtractionBtn.UseVisualStyleBackColor = false;
+            this.subtractionBtn.Click += new System.EventHandler(this.subtractionBtn_Click);
             // 
             // additionBtn
             // 

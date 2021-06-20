@@ -193,6 +193,14 @@ namespace Object_Oriented_Calculator
             operation.operationIsPressed = true;
         }
 
+        private void subtractionBtn_Click(object sender, EventArgs e)
+        {
+            operation.firstNum = displScreen.Text;
+            displScreen.Text = "0";
+            operation.operand = "-";
+            operation.operationIsPressed = true;
+        }
+
         private void equalsBtn_Click(object sender, EventArgs e)
         {
             if (operation.operand == "+")
@@ -200,7 +208,13 @@ namespace Object_Oriented_Calculator
                 operation.secondNum = displScreen.Text;
                 operation.Add();
                 displScreen.Text = operation.result;
-                operation.firstNum = displScreen.Text;
+            }
+
+            if (operation.operand == "-")
+            {
+                operation.secondNum = displScreen.Text;
+                operation.Subtract();
+                displScreen.Text = operation.result;
             }
         }
     }
