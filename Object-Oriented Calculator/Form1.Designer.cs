@@ -257,6 +257,7 @@ namespace Object_Oriented_Calculator
             this.divisionBtn.TabIndex = 16;
             this.divisionBtn.Text = "÷";
             this.divisionBtn.UseVisualStyleBackColor = false;
+            this.divisionBtn.Click += new System.EventHandler(this.divisionBtn_Click);
             // 
             // multiplicationBtn
             // 
@@ -268,6 +269,7 @@ namespace Object_Oriented_Calculator
             this.multiplicationBtn.TabIndex = 17;
             this.multiplicationBtn.Text = "×";
             this.multiplicationBtn.UseVisualStyleBackColor = false;
+            this.multiplicationBtn.Click += new System.EventHandler(this.multiplicationBtn_Click);
             // 
             // subtractionBtn
             // 

@@ -201,6 +201,14 @@ namespace Object_Oriented_Calculator
             operation.operationIsPressed = true;
         }
 
+        private void multiplicationBtn_Click(object sender, EventArgs e)
+        {
+            operation.firstNum = displScreen.Text;
+            displScreen.Text = "0";
+            operation.operand = "*";
+            operation.operationIsPressed = true;
+        }
+
         private void equalsBtn_Click(object sender, EventArgs e)
         {
             if (operation.operand == "+")
@@ -216,6 +224,20 @@ namespace Object_Oriented_Calculator
                 operation.Subtract();
                 displScreen.Text = operation.result;
             }
+
+            if (operation.operand == "*")
+            {
+                operation.secondNum = displScreen.Text;
+                operation.Multiply();
+                displScreen.Text = operation.result;
+            }
+
+
+        }
+
+        private void divisionBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
