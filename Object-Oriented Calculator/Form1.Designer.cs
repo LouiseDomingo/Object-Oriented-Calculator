@@ -231,6 +231,7 @@ namespace Object_Oriented_Calculator
             this.percentBtn.TabIndex = 14;
             this.percentBtn.Text = "%";
             this.percentBtn.UseVisualStyleBackColor = false;
+            this.percentBtn.Click += new System.EventHandler(this.percentBtn_Click);
             // 
             // displScreen
             // 

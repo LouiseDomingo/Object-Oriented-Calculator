@@ -13,6 +13,7 @@ namespace Object_Oriented_Calculator
     public partial class objOrientedCalculator : Form
     {
         operationsClass operation = new operationsClass();
+        otherFunctionsClass otherFunctions = new otherFunctionsClass();
 
         public objOrientedCalculator()
         {
@@ -251,8 +252,15 @@ namespace Object_Oriented_Calculator
                 displScreen.Text = operation.result;
                 equalsBtn.Enabled = false;
             }
-
-
         }
+
+        //for other functions of the calculator
+        private void percentBtn_Click(object sender, EventArgs e)
+        {
+            otherFunctions.input = displScreen.Text;
+            otherFunctions.Percent();
+            displScreen.Text = otherFunctions.result2;
+        }
+
     }
 }
