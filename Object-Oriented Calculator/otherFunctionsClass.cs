@@ -23,7 +23,7 @@ namespace Object_Oriented_Calculator
 
         public void SquareRoot()
         {
-            result2 = Math.Sqrt(Double.Parse(input)).ToString();
+            result2 = Math.Round(Math.Sqrt(Double.Parse(input)), 5).ToString();
         }
 
         public void Fraction()
