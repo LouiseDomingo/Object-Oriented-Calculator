@@ -28,7 +28,14 @@ namespace Object_Oriented_Calculator
 
         public void Fraction()
         {
-            result2 = Math.Round((1 / Double.Parse(input)), 5).ToString();
+            if (input != "0")
+            {
+                result2 = Math.Round((1 / Double.Parse(input)), 5).ToString();
+            }
+            else
+            {
+                result2 = "Undefined";
+            }
         }
     }
 }
