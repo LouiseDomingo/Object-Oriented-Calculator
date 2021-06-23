@@ -232,10 +232,19 @@ namespace Object_Oriented_Calculator
 
             if (operation.operand == "/")
             {
-                operation.secondNum = displScreen.Text;
-                operation.Divide();
-                displScreen.Text = operation.result;
-                equalsBtn.Enabled = false;
+                if (displScreen.Text != "0")
+                {
+                    operation.secondNum = displScreen.Text;
+                    operation.Divide();
+                    displScreen.Text = operation.result;
+                }
+                else
+                {
+                    operation.secondNum = displScreen.Text;
+                    operation.Divide();
+                    displScreen.Text = operation.result;
+                    equalsBtn.Enabled = false;
+                }
             }
         }
 
