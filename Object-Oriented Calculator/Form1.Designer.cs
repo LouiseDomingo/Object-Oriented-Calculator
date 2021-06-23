@@ -340,6 +340,7 @@ namespace Object_Oriented_Calculator
             this.squaredBtn.TabIndex = 23;
             this.squaredBtn.Text = "x²";
             this.squaredBtn.UseVisualStyleBackColor = false;
+            this.squaredBtn.Click += new System.EventHandler(this.squaredBtn_Click);
             // 
             // objOrientedCalculator
             // 

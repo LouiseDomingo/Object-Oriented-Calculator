@@ -262,5 +262,11 @@ namespace Object_Oriented_Calculator
             displScreen.Text = otherFunctions.result2;
         }
 
+        private void squaredBtn_Click(object sender, EventArgs e)
+        {
+            otherFunctions.input = displScreen.Text;
+            otherFunctions.Squared();
+            displScreen.Text = otherFunctions.result2;
+        }
     }
 }

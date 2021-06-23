@@ -16,5 +16,10 @@ namespace Object_Oriented_Calculator
             result2 = (Double.Parse(input) / 100).ToString();
         }
 
+        public void Squared()
+        {
+            result2 = Math.Pow(Double.Parse(input), 2).ToString();
+        }
+
     }
 }
