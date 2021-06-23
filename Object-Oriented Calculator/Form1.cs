@@ -140,22 +140,7 @@ namespace Object_Oriented_Calculator
             }
         }
 
-        //other buttons in the form
-        
-        Double negativeVal;
-        private void posiNegativeBtn_Click(object sender, EventArgs e)
-        {
-            if (displScreen.Text != "0")
-            {
-                negativeVal = Convert.ToDouble(displScreen.Text) * -1;
-                displScreen.Text = negativeVal.ToString();
-            }
-            else
-            {
-
-            }
-        }
-
+        //other buttons in the form that is related in number-buttons
         private void decimalBtn_Click(object sender, EventArgs e)
         {
             if (displScreen.Text.Contains("."))
@@ -281,6 +266,20 @@ namespace Object_Oriented_Calculator
             otherFunctions.input = displScreen.Text;
             otherFunctions.Fraction();
             displScreen.Text = otherFunctions.result2;
+        }
+
+        private void posiNegativeBtn_Click(object sender, EventArgs e)
+        {
+            if (displScreen.Text != "0")
+            {
+                otherFunctions.input = displScreen.Text;
+                otherFunctions.NegativeValue();
+                displScreen.Text = otherFunctions.result2;
+            }
+            else
+            {
+                displScreen.Text = "-";
+            }
         }
     }
 }

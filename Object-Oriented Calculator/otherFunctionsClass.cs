@@ -37,5 +37,10 @@ namespace Object_Oriented_Calculator
                 result2 = "Undefined";
             }
         }
+
+        public void NegativeValue()
+        {
+            result2 = (Double.Parse(input) * -1).ToString();
+        }
     }
 }
