@@ -28,7 +28,7 @@ namespace Object_Oriented_Calculator
 
         public void Fraction()
         {
-            result2 = (1 / Double.Parse(input)).ToString();
+            result2 = Math.Round((1 / Double.Parse(input)), 5).ToString();
         }
     }
 }
