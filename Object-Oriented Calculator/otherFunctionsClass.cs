@@ -25,5 +25,10 @@ namespace Object_Oriented_Calculator
         {
             result2 = Math.Sqrt(Double.Parse(input)).ToString();
         }
+
+        public void Fraction()
+        {
+            result2 = (1 / Double.Parse(input)).ToString();
+        }
     }
 }

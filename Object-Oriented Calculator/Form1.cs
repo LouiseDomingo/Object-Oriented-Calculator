@@ -275,5 +275,12 @@ namespace Object_Oriented_Calculator
             otherFunctions.SquareRoot();
             displScreen.Text = otherFunctions.result2;
         }
+
+        private void fractionBtn_Click(object sender, EventArgs e)
+        {
+            otherFunctions.input = displScreen.Text;
+            otherFunctions.Fraction();
+            displScreen.Text = otherFunctions.result2;
+        }
     }
 }

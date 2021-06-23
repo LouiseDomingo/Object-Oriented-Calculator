@@ -318,6 +318,7 @@ namespace Object_Oriented_Calculator
             this.fractionBtn.TabIndex = 21;
             this.fractionBtn.Text = "1 / x";
             this.fractionBtn.UseVisualStyleBackColor = false;
+            this.fractionBtn.Click += new System.EventHandler(this.fractionBtn_Click);
             // 
             // sqrRootBtn
             // 
