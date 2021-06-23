@@ -21,5 +21,9 @@ namespace Object_Oriented_Calculator
             result2 = Math.Pow(Double.Parse(input), 2).ToString();
         }
 
+        public void SquareRoot()
+        {
+            result2 = Math.Sqrt(Double.Parse(input)).ToString();
+        }
     }
 }

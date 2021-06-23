@@ -329,6 +329,7 @@ namespace Object_Oriented_Calculator
             this.sqrRootBtn.TabIndex = 22;
             this.sqrRootBtn.Text = "√x";
             this.sqrRootBtn.UseVisualStyleBackColor = false;
+            this.sqrRootBtn.Click += new System.EventHandler(this.sqrRootBtn_Click);
             // 
             // squaredBtn
             // 

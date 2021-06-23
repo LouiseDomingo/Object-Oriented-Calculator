@@ -268,5 +268,12 @@ namespace Object_Oriented_Calculator
             otherFunctions.Squared();
             displScreen.Text = otherFunctions.result2;
         }
+
+        private void sqrRootBtn_Click(object sender, EventArgs e)
+        {
+            otherFunctions.input = displScreen.Text;
+            otherFunctions.SquareRoot();
+            displScreen.Text = otherFunctions.result2;
+        }
     }
 }
