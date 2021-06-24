@@ -284,6 +284,7 @@ namespace Object_Oriented_Calculator
                 otherFunctions.Fraction();
                 displScreen.Text = otherFunctions.result2;
                 fractionBtn.Enabled = false;
+                disablingOperationBtns();
             }
             
         }
@@ -300,6 +301,16 @@ namespace Object_Oriented_Calculator
             {
                 displScreen.Text = "-";
             }
+        }
+
+        //added some functions
+        private void disablingOperationBtns()
+        {
+            additionBtn.Enabled = false;
+            subtractionBtn.Enabled = false;
+            multiplicationBtn.Enabled = false;
+            divisionBtn.Enabled = false;
+            equalsBtn.Enabled = false;
         }
     }
 }
