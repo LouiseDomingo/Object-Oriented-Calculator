@@ -272,9 +272,20 @@ namespace Object_Oriented_Calculator
 
         private void fractionBtn_Click(object sender, EventArgs e)
         {
-            otherFunctions.input = displScreen.Text;
-            otherFunctions.Fraction();
-            displScreen.Text = otherFunctions.result2;
+            if (displScreen.Text != "0")
+            {
+                otherFunctions.input = displScreen.Text;
+                otherFunctions.Fraction();
+                displScreen.Text = otherFunctions.result2;
+            }
+            else
+            {
+                otherFunctions.input = displScreen.Text;
+                otherFunctions.Fraction();
+                displScreen.Text = otherFunctions.result2;
+                fractionBtn.Enabled = false;
+            }
+            
         }
 
         private void posiNegativeBtn_Click(object sender, EventArgs e)
