@@ -22,11 +22,7 @@ namespace Object_Oriented_Calculator
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            if (displScreen.Text == "0")
-            {
-
-            }
-            else
+            if (displScreen.Text != "0")
             {
                 displScreen.Text = displScreen.Text + "0";
             }
@@ -145,7 +141,6 @@ namespace Object_Oriented_Calculator
         {
             if (displScreen.Text.Contains("."))
             {
-
             }
             else
             {

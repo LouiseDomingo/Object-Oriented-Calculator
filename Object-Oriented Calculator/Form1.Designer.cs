@@ -375,6 +375,7 @@ namespace Object_Oriented_Calculator
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.decimalBtn);
             this.Name = "objOrientedCalculator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
